@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Listings</title>
+      </head>
+       <style>
+    /* General Reset and Box Model */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      display:grid ;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      color: #444;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+
+    .property-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .property-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      padding: 20px;
+    }
+
+    .property-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .property-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid #f1f1f1;
+    }
+
+    .property-info {
+      padding: 20px;
+    }
+
+    .property-info h3 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .property-info p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #555;
+    }
+
+    /* Responsive Styling */
+    @media screen and (max-width: 768px) {
+      .property-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .property-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .property-info h3 {
+        font-size: 1.4rem;
+      }
+
+      .cta-button {
+        font-size: 1rem;
+      }
+    }
+  </style>
+<body>
+ <div>
+<!-- Netherlands Section -->
+<h2>Netherlands</h2>
+<div class="property-grid">
+  <!-- Property 1: Canal House, Amsterdam -->
+  <div class="property-card">
+    <img src="images/netherlands01.jpg" alt="Canal House, Amsterdam">
+    <div class="property-info">
+      <h3>Canal House, Amsterdam</h3>
+      <p>Stunning canal house in the heart of Amsterdam, with classic Dutch architecture.</p>
+      <div class="meta">
+        Size: 400 m²<br>
+        Rooms: 6<br>
+        Price: €2,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 2: Modern Loft, Rotterdam -->
+  <div class="property-card">
+    <img src="images/netherlands02.jpg" alt="Modern Loft, Rotterdam">
+    <div class="property-info">
+      <h3>Modern Loft, Rotterdam</h3>
+      <p>Trendy loft apartment with urban views in one of the most dynamic cities in the Netherlands.</p>
+      <div class="meta">
+        Size: 250 m²<br>
+        Rooms: 4<br>
+        Price: €1,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 3: Countryside Farmhouse, Friesland -->
+  <div class="property-card">
+    <img src="images/netherlands03.jpg" alt="Countryside Farmhouse, Friesland">
+    <div class="property-info">
+      <h3>Countryside Farmhouse, Friesland</h3>
+      <p>Charming farmhouse surrounded by fields and tranquil countryside in Friesland.</p>
+      <div class="meta">
+        Size: 700 m²<br>
+        Rooms: 9<br>
+        Price: €3,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 4: Luxury Penthouse, The Hague -->
+  <div class="property-card">
+    <img src="images/netherlands04.jpg" alt="Luxury Penthouse, The Hague">
+    <div class="property-info">
+      <h3>Luxury Penthouse, The Hague</h3>
+      <p>Spacious penthouse offering panoramic city views and luxurious interiors in The Hague.</p>
+      <div class="meta">
+        Size: 450 m²<br>
+        Rooms: 6<br>
+        Price: €4,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 5: Dutch Farm, Limburg -->
+  <div class="property-card">
+    <img src="images/netherlands05.jpg" alt="Dutch Farm, Limburg">
+    <div class="property-info">
+      <h3>Dutch Farm, Limburg</h3>
+      <p>Authentic Dutch farmhouse with expansive land and vineyards in Limburg.</p>
+      <div class="meta">
+        Size: 800 m²<br>
+        Rooms: 10<br>
+        Price: €3,700K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 6: Waterfront Villa, Giethoorn -->
+  <div class="property-card">
+    <img src="images/netherlands06.jpg" alt="Waterfront Villa, Giethoorn">
+    <div class="property-info">
+      <h3>Waterfront Villa, Giethoorn</h3>
+      <p>Secluded waterfront villa in the picturesque village of Giethoorn, known for its canals.</p>
+      <div class="meta">
+        Size: 550 m²<br>
+        Rooms: 8<br>
+        Price: €4,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 7: Modern Townhouse, Utrecht -->
+  <div class="property-card">
+    <img src="images/netherlands07.jpg" alt="Modern Townhouse, Utrecht">
+    <div class="property-info">
+      <h3>Modern Townhouse, Utrecht</h3>
+      <p>Stylish townhouse located near Utrecht's historic city center with contemporary design.</p>
+      <div class="meta">
+        Size: 350 m²<br>
+        Rooms: 5<br>
+        Price: €2,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 8: Lakeside Villa, Friesland -->
+  <div class="property-card">
+    <img src="images/netherlands08.jpg" alt="Lakeside Villa, Friesland">
+    <div class="property-info">
+      <h3>Lakeside Villa, Friesland</h3>
+      <p>Beautiful lakeside villa with private dock, perfect for boating and relaxation.</p>
+      <div class="meta">
+        Size: 700 m²<br>
+        Rooms: 7<br>
+        Price: €5,300K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 9: Urban Loft, Eindhoven -->
+  <div class="property-card">
+    <img src="images/netherlands09.jpg" alt="Urban Loft, Eindhoven">
+    <div class="property-info">
+      <h3>Urban Loft, Eindhoven</h3>
+      <p>Trendy loft in the heart of Eindhoven, a city known for innovation and design.</p>
+      <div class="meta">
+        Size: 380 m²<br>
+        Rooms: 4<br>
+        Price: €2,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 10: Dutch Country Estate, Overijssel -->
+  <div class="property-card">
+    <img src="images/netherlands10.jpg" alt="Dutch Country Estate, Overijssel">
+    <div class="property-info">
+      <h3>Dutch Country Estate, Overijssel</h3>
+      <p>Spacious country estate with acres of private land, ideal for a peaceful retreat.</p>
+      <div class="meta">
+        Size: 1,000 m²<br>
+        Rooms: 12<br>
+        Price: €6,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 11: Luxury Villa, Zandvoort -->
+  <div class="property-card">
+    <img src="images/netherlands11.jpg" alt="Luxury Villa, Zandvoort">
+    <div class="property-info">
+      <h3>Luxury Villa, Zandvoort</h3>
+      <p>Gorgeous beachfront villa located in the coastal town of Zandvoort.</p>
+      <div class="meta">
+        Size: 950 m²<br>
+        Rooms: 11<br>
+        Price: €7,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 12: Eco-Friendly House, Rotterdam -->
+  <div class="property-card">
+    <img src="images/netherlands12.jpg" alt="Eco-Friendly House, Rotterdam">
+    <div class="property-info">
+      <h3>Eco-Friendly House, Rotterdam</h3>
+      <p>Modern eco-friendly house with sustainable features in Rotterdam's green district.</p>
+      <div class="meta">
+        Size: 350 m²<br>
+        Rooms: 5<br>
+        Price: €2,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 13: Historic Castle, Gelderland -->
+  <div class="property-card">
+    <img src="images/netherlands13.jpg" alt="Historic Castle, Gelderland">
+    <div class="property-info">
+      <h3>Historic Castle, Gelderland</h3>
+      <p>Impressive medieval castle located in the rolling hills of Gelderland.</p>
+      <div class="meta">
+        Size: 2,000 m²<br>
+        Rooms: 18<br>
+        Price: €12,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 14: Townhouse, Groningen -->
+  <div class="property-card">
+    <img src="images/netherlands14.jpg" alt="Townhouse, Groningen">
+    <div class="property-info">
+      <h3>Townhouse, Groningen</h3>
+      <p>Modern townhouse with views of the city center and easy access to local amenities.</p>
+      <div class="meta">
+        Size: 300 m²<br>
+        Rooms: 5<br>
+        Price: €2,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 15: Beach House, North Holland -->
+  <div class="property-card">
+    <img src="images/netherlands15.jpg" alt="Beach House, North Holland">
+    <div class="property-info">
+      <h3>Beach House, North Holland</h3>
+      <p>Charming beach house with stunning ocean views, located along the North Sea coastline.</p>
+      <div class="meta">
+        Size: 650 m²<br>
+        Rooms: 8<br>
+        Price: €4,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 16: Farm Estate, Utrecht -->
+  <div class="property-card">
+    <img src="images/netherlands16.jpg" alt="Farm Estate, Utrecht">
+    <div class="property-info">
+      <h3>Farm Estate, Utrecht</h3>
+      <p>Rustic farmhouse estate with expansive farmlands and charming Dutch countryside views.</p>
+      <div class="meta">
+        Size: 900 m²<br>
+        Rooms: 10<br>
+        Price: €4,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 17: Waterfront Mansion, Amsterdam -->
+  <div class="property-card">
+    <img src="images/netherlands17.jpg" alt="Waterfront Mansion, Amsterdam">
+    <div class="property-info">
+      <h3>Waterfront Mansion, Amsterdam</h3>
+      <p>Exclusive mansion located on the waterfront, offering scenic canal views.</p>
+      <div class="meta">
+        Size: 1,200 m²<br>
+        Rooms: 15<br>
+        Price: €10,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 18: Urban Luxury Apartment, Amsterdam -->
+  <div class="property-card">
+    <img src="images/netherlands18.jpg" alt="Urban Luxury Apartment, Amsterdam">
+    <div class="property-info">
+      <h3>Urban Luxury Apartment, Amsterdam</h3>
+      <p>Luxury apartment offering exceptional design and city views in Amsterdam's center.</p>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+    </div>
+
+<!-- Italy Section -->
+<h2>Italy</h2>
+<div class="property-grid">
+  <!-- Property 1: Luxury Villa, Lake Como -->
+  <div class="property-card">
+    <img src="images/italy01.jpg" alt="Luxury Villa, Lake Como">
+    <div class="property-info">
+      <h3>Luxury Villa, Lake Como</h3>
+      <p>Exclusive villa on the shores of Lake Como with breathtaking views.</p>
+      <div class="meta">
+        Size: 700 m²<br>
+        Rooms: 8<br>
+        Price: €6,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 2: Penthouse, Rome -->
+  <div class="property-card">
+    <img src="images/italy02.jpg" alt="Penthouse, Rome">
+    <div class="property-info">
+      <h3>Penthouse, Rome</h3>
+      <p>Modern penthouse offering panoramic views of the Roman skyline.</p>
+      <div class="meta">
+        Size: 300 m²<br>
+        Rooms: 4<br>
+        Price: €2,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 3: Tuscan Villa, Florence -->
+  <div class="property-card">
+    <img src="images/italy03.jpg" alt="Tuscan Villa, Florence">
+    <div class="property-info">
+      <h3>Tuscan Villa, Florence</h3>
+      <p>Traditional villa surrounded by vineyards and olive groves in Tuscany.</p>
+      <div class="meta">
+        Size: 600 m²<br>
+        Rooms: 9<br>
+        Price: €4,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 4: Seafront Mansion, Amalfi Coast -->
+  <div class="property-card">
+    <img src="images/italy04.jpg" alt="Seafront Mansion, Amalfi Coast">
+    <div class="property-info">
+      <h3>Seafront Mansion, Amalfi Coast</h3>
+      <p>Exquisite mansion with direct sea access and stunning views of the coastline.</p>
+      <div class="meta">
+        Size: 750 m²<br>
+        Rooms: 10<br>
+        Price: €7,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 5: Historic Palace, Venice -->
+  <div class="property-card">
+    <img src="images/italy05.jpg" alt="Historic Palace, Venice">
+    <div class="property-info">
+      <h3>Historic Palace, Venice</h3>
+      <p>Palatial residence with views over the Grand Canal and Venetian architecture.</p>
+      <div class="meta">
+        Size: 1,000 m²<br>
+        Rooms: 12<br>
+        Price: €9,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 6: Modern Loft, Milan -->
+  <div class="property-card">
+    <img src="images/italy06.jpg" alt="Modern Loft, Milan">
+    <div class="property-info">
+      <h3>Modern Loft, Milan</h3>
+      <p>Chic loft apartment in the heart of Milan, ideal for city living.</p>
+      <div class="meta">
+        Size: 350 m²<br>
+        Rooms: 5<br>
+        Price: €2,100K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 7: Villa, Sardinia -->
+  <div class="property-card">
+    <img src="images/italy07.jpg" alt="Villa, Sardinia">
+    <div class="property-info">
+      <h3>Villa, Sardinia</h3>
+      <p>Luxurious villa with views of the Mediterranean Sea and sandy beaches.</p>
+      <div class="meta">
+        Size: 550 m²<br>
+        Rooms: 6<br>
+        Price: €3,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 8: Countryside Estate, Tuscany -->
+  <div class="property-card">
+    <img src="images/italy08.jpg" alt="Countryside Estate, Tuscany">
+    <div class="property-info">
+      <h3>Countryside Estate, Tuscany</h3>
+      <p>Beautiful countryside estate with olive groves, vineyard, and a private pool.</p>
+      <div class="meta">
+        Size: 800 m²<br>
+        Rooms: 10<br>
+        Price: €5,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 9: Beachfront Villa, Sicily -->
+  <div class="property-card">
+    <img src="images/italy09.jpg" alt="Beachfront Villa, Sicily">
+    <div class="property-info">
+      <h3>Beachfront Villa, Sicily</h3>
+      <p>Exclusive beachfront villa with private access to the clear waters of Sicily.</p>
+      <div class="meta">
+        Size: 650 m²<br>
+        Rooms: 8<br>
+        Price: €4,600K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 10: Contemporary Mansion, Lake Garda -->
+  <div class="property-card">
+    <img src="images/italy10.jpg" alt="Contemporary Mansion, Lake Garda">
+    <div class="property-info">
+      <h3>Contemporary Mansion, Lake Garda</h3>
+      <p>Modern mansion with breathtaking views of Lake Garda and contemporary design.</p>
+      <div class="meta">
+        Size: 950 m²<br>
+        Rooms: 12<br>
+        Price: €6,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 11: Coastal Villa, Cinque Terre -->
+  <div class="property-card">
+    <img src="images/italy11.jpg" alt="Coastal Villa, Cinque Terre">
+    <div class="property-info">
+      <h3>Coastal Villa, Cinque Terre</h3>
+      <p>Stunning coastal villa with views of the cliffs and crystal clear waters of Cinque Terre.</p>
+      <div class="meta">
+        Size: 700 m²<br>
+        Rooms: 9<br>
+        Price: €5,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 12: Luxury Penthouse, Naples -->
+  <div class="property-card">
+    <img src="images/italy12.jpg" alt="Luxury Penthouse, Naples">
+    <div class="property-info">
+      <h3>Luxury Penthouse, Naples</h3>
+      <p>Exclusive penthouse offering panoramic views of Mount Vesuvius and the Gulf of Naples.</p>
+      <div class="meta">
+        Size: 450 m²<br>
+        Rooms: 6<br>
+        Price: €3,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 13: Historic Castle, Umbria -->
+  <div class="property-card">
+    <img src="images/italy13.jpg" alt="Historic Castle, Umbria">
+    <div class="property-info">
+      <h3>Historic Castle, Umbria</h3>
+      <p>Magnificent castle surrounded by rolling hills and ancient forests in Umbria.</p>
+      <div class="meta">
+        Size: 1,200 m²<br>
+        Rooms: 15<br>
+        Price: €8,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 14: Villa with Vineyard, Piedmont -->
+  <div class="property-card">
+    <img src="images/italy14.jpg" alt="Villa with Vineyard, Piedmont">
+    <div class="property-info">
+      <h3>Villa with Vineyard, Piedmont</h3>
+      <p>Beautiful villa with its own vineyard, producing fine wines in the Piedmont region.</p>
+      <div class="meta">
+        Size: 900 m²<br>
+        Rooms: 14<br>
+        Price: €7,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 15: Mountain Chalet, Dolomites -->
+  <div class="property-card">
+    <img src="images/italy15.jpg" alt="Mountain Chalet, Dolomites">
+    <div class="property-info">
+      <h3>Mountain Chalet, Dolomites</h3>
+      <p>Cozy chalet nestled in the Dolomites, ideal for ski enthusiasts and mountain lovers.</p>
+      <div class="meta">
+        Size: 600 m²<br>
+        Rooms: 7<br>
+        Price: €4,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 16: Waterfront Property, Sicily -->
+  <div class="property-card">
+    <img src="images/italy16.jpg" alt="Waterfront Property, Sicily">
+    <div class="property-info">
+      <h3>Waterfront Property, Sicily</h3>
+      <p>Luxury property with views of the crystal-clear Mediterranean Sea in Sicily.</p>
+      <div class="meta">
+        Size: 1,000 m²<br>
+        Rooms: 12<br>
+        Price: €6,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 17: Luxury Mansion, Rome -->
+  <div class="property-card">
+    <img src="images/italy17.jpg" alt="Luxury Mansion, Rome">
+    <div class="property-info">
+      <h3>Luxury Mansion, Rome</h3>
+      <p>Elegant mansion in central Rome with private gardens and classic Roman design.</p>
+      <div class="meta">
+        Size: 1,500 m²<br>
+        Rooms: 20<br>
+        Price: €10,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 18: Villa, Lake Maggiore -->
+  <div class="property-card">
+    <img src="images/italy18.jpg" alt="Villa, Lake Maggiore">
+    <div class="property-info">
+      <h3>Villa, Lake Maggiore</h3>
+      <p>Exclusive villa with direct lake access, ideal for peaceful retreats.</p>
+      <div class="meta">
+        Size: 800 m²<br>
+        Rooms: 11<br>
+        Price: €7,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<!-- Germany Section -->
+<h2>Germany</h2>
+<div class="property-grid">
+  <div class="property-card">
+    <img src="images/germany01.jpg" alt="Villa am See, Berlin">
+    <div class="property-info">
+      <h3>Villa am See, Berlin</h3>
+      <p>Elegant villa directly on the water with a private dock and wellness area.</p>
+      <div class="meta">
+        Size: 350 m²<br>
+        Rooms: 5<br>
+        Price: €2,100K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+  
+  <!-- Property 2: Modern Mansion, Munich -->
+  <div class="property-card">
+    <img src="images/germany02.jpg" alt="Modern Mansion, Munich">
+    <div class="property-info">
+      <h3>Modern Mansion, Munich</h3>
+      <p>Contemporary mansion with sleek finishes and an expansive garden.</p>
+      <div class="meta">
+        Size: 700 m²<br>
+        Rooms: 8<br>
+        Price: €4,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 3: Historical Castle, Heidelberg -->
+  <div class="property-card">
+    <img src="images/germany03.jpg" alt="Historical Castle, Heidelberg">
+    <div class="property-info">
+      <h3>Historical Castle, Heidelberg</h3>
+      <p>Stunning castle perched on a hill, overlooking the city and river.</p>
+      <div class="meta">
+        Size: 1,200 m²<br>
+        Rooms: 15<br>
+        Price: €8,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 4: Seaside Retreat, Baltic Sea -->
+  <div class="property-card">
+    <img src="images/germany04.jpg" alt="Seaside Retreat, Baltic Sea">
+    <div class="property-info">
+      <h3>Seaside Retreat, Baltic Sea</h3>
+      <p>Luxurious retreat by the Baltic Sea with panoramic ocean views.</p>
+      <div class="meta">
+        Size: 600 m²<br>
+        Rooms: 7<br>
+        Price: €3,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 5: Mountain Lodge, Bavarian Alps -->
+  <div class="property-card">
+    <img src="images/germany05.jpg" alt="Mountain Lodge, Bavarian Alps">
+    <div class="property-info">
+      <h3>Mountain Lodge, Bavarian Alps</h3>
+      <p>Rustic yet modern mountain lodge with sweeping views of the Alps.</p>
+      <div class="meta">
+        Size: 450 m²<br>
+        Rooms: 6<br>
+        Price: €2,700K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 6: Luxury Apartment, Frankfurt -->
+  <div class="property-card">
+    <img src="images/germany06.jpg" alt="Luxury Apartment, Frankfurt">
+    <div class="property-info">
+      <h3>Luxury Apartment, Frankfurt</h3>
+      <p>Exclusive apartment with skyline views and high-end finishes.</p>
+      <div class="meta">
+        Size: 320 m²<br>
+        Rooms: 4<br>
+        Price: €2,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 7: Waterfront Villa, Hamburg -->
+  <div class="property-card">
+    <img src="images/germany07.jpg" alt="Waterfront Villa, Hamburg">
+    <div class="property-info">
+      <h3>Waterfront Villa, Hamburg</h3>
+      <p>Modern waterfront villa with private dock and panoramic water views.</p>
+      <div class="meta">
+        Size: 550 m²<br>
+        Rooms: 7<br>
+        Price: €3,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 8: Countryside Estate, Bavaria -->
+  <div class="property-card">
+    <img src="images/germany08.jpg" alt="Countryside Estate, Bavaria">
+    <div class="property-info">
+      <h3>Countryside Estate, Bavaria</h3>
+      <p>Charming estate surrounded by rolling hills and forests.</p>
+      <div class="meta">
+        Size: 800 m²<br>
+        Rooms: 10<br>
+        Price: €5,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 9: Urban Loft, Berlin -->
+  <div class="property-card">
+    <img src="images/germany09.jpg" alt="Urban Loft, Berlin">
+    <div class="property-info">
+      <h3>Urban Loft, Berlin</h3>
+      <p>Stylish loft in the heart of Berlin, with open-plan living and modern amenities.</p>
+      <div class="meta">
+        Size: 300 m²<br>
+        Rooms: 4<br>
+        Price: €1,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 10: Traditional Farmhouse, Bavaria -->
+  <div class="property-card">
+    <img src="images/germany10.jpg" alt="Traditional Farmhouse, Bavaria">
+    <div class="property-info">
+      <h3>Traditional Farmhouse, Bavaria</h3>
+      <p>Beautifully restored farmhouse with modern touches and panoramic views.</p>
+      <div class="meta">
+        Size: 450 m²<br>
+        Rooms: 6<br>
+        Price: €2,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 11: Villa with Garden, Dusseldorf -->
+  <div class="property-card">
+    <img src="images/germany11.jpg" alt="Villa with Garden, Dusseldorf">
+    <div class="property-info">
+      <h3>Villa with Garden, Dusseldorf</h3>
+      <p>Elegant villa with large garden, perfect for outdoor activities.</p>
+      <div class="meta">
+        Size: 500 m²<br>
+        Rooms: 6<br>
+        Price: €2,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 12: Lake House, Lake Constance -->
+  <div class="property-card">
+    <img src="images/germany12.jpg" alt="Lake House, Lake Constance">
+    <div class="property-info">
+      <h3>Lake House, Lake Constance</h3>
+      <p>Secluded lake house with beautiful views and private beach access.</p>
+      <div class="meta">
+        Size: 600 m²<br>
+        Rooms: 8<br>
+        Price: €4,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 13: Elegant Apartment, Stuttgart -->
+  <div class="property-card">
+    <img src="images/germany13.jpg" alt="Elegant Apartment, Stuttgart">
+    <div class="property-info">
+      <h3>Elegant Apartment, Stuttgart</h3>
+      <p>Spacious apartment with contemporary design and top-quality finishes.</p>
+      <div class="meta">
+        Size: 350 m²<br>
+        Rooms: 5<br>
+        Price: €2,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 14: Contemporary House, Freiburg -->
+  <div class="property-card">
+    <img src="images/germany14.jpg" alt="Contemporary House, Freiburg">
+    <div class="property-info">
+      <h3>Contemporary House, Freiburg</h3>
+      <p>Modern house with sustainable features and energy-efficient design.</p>
+      <div class="meta">
+        Size: 400 m²<br>
+        Rooms: 5<br>
+        Price: €2,100K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 15: Penthouse Apartment, Munich -->
+  <div class="property-card">
+    <img src="images/germany15.jpg" alt="Penthouse Apartment, Munich">
+    <div class="property-info">
+      <h3>Penthouse Apartment, Munich</h3>
+      <p>Luxurious penthouse with private terrace and panoramic views of the city.</p>
+      <div class="meta">
+        Size: 450 m²<br>
+        Rooms: 6<br>
+        Price: €3,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 16: Vineyard Estate, Rhineland-Palatinate -->
+  <div class="property-card">
+    <img src="images/germany16.jpg" alt="Vineyard Estate, Rhineland-Palatinate">
+    <div class="property-info">
+      <h3>Vineyard Estate, Rhineland-Palatinate</h3>
+      <p>Gorgeous estate surrounded by vineyards, ideal for wine enthusiasts.</p>
+      <div class="meta">
+        Size: 800 m²<br>
+        Rooms: 10<br>
+        Price: €5,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 17: Coastal Villa, Sylt Island -->
+  <div class="property-card">
+    <img src="images/germany17.jpg" alt="Coastal Villa, Sylt Island">
+    <div class="property-info">
+      <h3>Coastal Villa, Sylt Island</h3>
+      <p>Exclusive villa with direct beach access and breathtaking sea views.</p>
+      <div class="meta">
+        Size: 600 m²<br>
+        Rooms: 8<br>
+        Price: €4,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 18: Mountain Chalet, Black Forest -->
+  <div class="property-card">
+    <img src="images/germany18.jpg" alt="Mountain Chalet, Black Forest">
+    <div class="property-info">
+      <h3>Mountain Chalet, Black Forest</h3>
+      <p>Charming mountain chalet with cozy interiors and winter sports access.</p>
+      <div class="meta">
+        Size: 500 m²<br>
+        Rooms: 7<br>
+        Price: €3,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+<!-- France Section -->
+ 
+<h2>France</h2>
+<div class="property-grid">
+  <!-- Property 1: Château, Bordeaux -->
+  <div class="property-card">
+    <img src="images/france01.jpg" alt="Château, Bordeaux">
+    <div class="property-info">
+      <h3>Château, Bordeaux</h3>
+      <p>Classic French château surrounded by vineyards, perfect for wine lovers.</p>
+      <div class="meta">
+        Size: 600 m²<br>
+        Rooms: 10<br>
+        Price: €4,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 2: Villa, Côte d'Azur -->
+  <div class="property-card">
+    <img src="images/france02.jpg" alt="Villa, Côte d'Azur">
+    <div class="property-info">
+      <h3>Villa, Côte d'Azur</h3>
+      <p>Stunning villa with Mediterranean views and an infinity pool.</p>
+      <div class="meta">
+        Size: 550 m²<br>
+        Rooms: 7<br>
+        Price: €3,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 3: Modern Apartment, Paris -->
+  <div class="property-card">
+    <img src="images/france03.jpg" alt="Modern Apartment, Paris">
+    <div class="property-info">
+      <h3>Modern Apartment, Paris</h3>
+      <p>Luxurious apartment located in the heart of Paris with panoramic city views.</p>
+      <div class="meta">
+        Size: 350 m²<br>
+        Rooms: 4<br>
+        Price: €2,600K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 4: Château, Loire Valley -->
+  <div class="property-card">
+    <img src="images/france04.jpg" alt="Château, Loire Valley">
+    <div class="property-info">
+      <h3>Château, Loire Valley</h3>
+      <p>Enchanting château with expansive gardens and a private wine cellar.</p>
+      <div class="meta">
+        Size: 800 m²<br>
+        Rooms: 12<br>
+        Price: €6,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 5: Seaside Villa, Normandy -->
+  <div class="property-card">
+    <img src="images/france05.jpg" alt="Seaside Villa, Normandy">
+    <div class="property-info">
+      <h3>Seaside Villa, Normandy</h3>
+      <p>Charming seaside villa with panoramic views of the Normandy coast.</p>
+      <div class="meta">
+        Size: 500 m²<br>
+        Rooms: 6<br>
+        Price: €3,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 6: Luxury Chalet, Chamonix -->
+  <div class="property-card">
+    <img src="images/france06.jpg" alt="Luxury Chalet, Chamonix">
+    <div class="property-info">
+      <h3>Luxury Chalet, Chamonix</h3>
+      <p>Exclusive chalet with views of Mont Blanc, perfect for ski enthusiasts.</p>
+      <div class="meta">
+        Size: 700 m²<br>
+        Rooms: 8<br>
+        Price: €4,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 7: Vineyard Estate, Burgundy -->
+  <div class="property-card">
+    <img src="images/france07.jpg" alt="Vineyard Estate, Burgundy">
+    <div class="property-info">
+      <h3>Vineyard Estate, Burgundy</h3>
+      <p>Impressive estate with a vineyard, producing some of France's finest wines.</p>
+      <div class="meta">
+        Size: 1,000 m²<br>
+        Rooms: 15<br>
+        Price: €8,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 8: Historic Mansion, Versailles -->
+  <div class="property-card">
+    <img src="images/france08.jpg" alt="Historic Mansion, Versailles">
+    <div class="property-info">
+      <h3>Historic Mansion, Versailles</h3>
+      <p>Classic mansion with historical charm and stunning palace gardens.</p>
+      <div class="meta">
+        Size: 1,200 m²<br>
+        Rooms: 18<br>
+        Price: €10,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 9: Modern Loft, Lyon -->
+  <div class="property-card">
+    <img src="images/france09.jpg" alt="Modern Loft, Lyon">
+    <div class="property-info">
+      <h3>Modern Loft, Lyon</h3>
+      <p>Stylish loft with industrial design and panoramic city views.</p>
+      <div class="meta">
+        Size: 350 m²<br>
+        Rooms: 5<br>
+        Price: €2,400K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 10: Villa with Pool, Saint-Tropez -->
+  <div class="property-card">
+    <img src="images/france10.jpg" alt="Villa with Pool, Saint-Tropez">
+    <div class="property-info">
+      <h3>Villa with Pool, Saint-Tropez</h3>
+      <p>Exclusive villa with a large pool, located in the glamorous Saint-Tropez.</p>
+      <div class="meta">
+        Size: 600 m²<br>
+        Rooms: 7<br>
+        Price: €5,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 11: City Mansion, Paris -->
+  <div class="property-card">
+    <img src="images/france11.jpg" alt="City Mansion, Paris">
+    <div class="property-info">
+      <h3>City Mansion, Paris</h3>
+      <p>Elegant mansion in the heart of Paris with classic French design.</p>
+      <div class="meta">
+        Size: 500 m²<br>
+        Rooms: 8<br>
+        Price: €6,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 12: Countryside Manor, Provence -->
+  <div class="property-card">
+    <img src="images/france12.jpg" alt="Countryside Manor, Provence">
+    <div class="property-info">
+      <h3>Countryside Manor, Provence</h3>
+      <p>Charming manor surrounded by lavender fields and rolling hills.</p>
+      <div class="meta">
+        Size: 800 m²<br>
+        Rooms: 12<br>
+        Price: €4,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 13: Coastal Retreat, French Riviera -->
+  <div class="property-card">
+    <img src="images/france13.jpg" alt="Coastal Retreat, French Riviera">
+    <div class="property-info">
+      <h3>Coastal Retreat, French Riviera</h3>
+      <p>Beautiful coastal retreat with direct access to the beach and panoramic views.</p>
+      <div class="meta">
+        Size: 650 m²<br>
+        Rooms: 9<br>
+        Price: €4,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 14: Luxury Penthouse, Paris -->
+  <div class="property-card">
+    <img src="images/france14.jpg" alt="Luxury Penthouse, Paris">
+    <div class="property-info">
+      <h3>Luxury Penthouse, Paris</h3>
+      <p>Exquisite penthouse with panoramic views of the Eiffel Tower.</p>
+      <div class="meta">
+        Size: 400 m²<br>
+        Rooms: 6<br>
+        Price: €7,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 15: Vineyard Estate, Provence -->
+  <div class="property-card">
+    <img src="images/france15.jpg" alt="Vineyard Estate, Provence">
+    <div class="property-info">
+      <h3>Vineyard Estate, Provence</h3>
+      <p>Magnificent estate with vineyards and olive groves in the heart of Provence.</p>
+      <div class="meta">
+        Size: 1,000 m²<br>
+        Rooms: 14<br>
+        Price: €6,800K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 16: Chateau, French Alps -->
+  <div class="property-card">
+    <img src="images/france16.jpg" alt="Chateau, French Alps">
+    <div class="property-info">
+      <h3>Chateau, French Alps</h3>
+      <p>Majestic chateau located in the French Alps with panoramic mountain views.</p>
+      <div class="meta">
+        Size: 1,200 m²<br>
+        Rooms: 20<br>
+        Price: €12,000K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 17: Riverside Mansion, Bordeaux -->
+   
+  <div class="property-card">
+    <img src="images/france17.jpg" alt="Riverside Mansion, Bordeaux">
+    <div class="property-info">
+      <h3>Riverside Mansion, Bordeaux</h3>
+      <p>Luxurious mansion on the banks of the river with stunning views.</p>
+      <div class="meta">
+        Size: 750 m²<br>
+        Rooms: 10<br>
+        Price: €5,500K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+
+  <!-- Property 18: Chateau with Vineyard, Alsace -->
+  <div class="property-card">
+    <img src="images/france18.jpg" alt="Chateau with Vineyard, Alsace">
+    <div class="property-info">
+      <h3>Chateau with Vineyard, Alsace</h3>
+      <p>Exceptional château with a private vineyard and panoramic countryside views.</p>
+      <div class="meta">
+        Size: 950 m²<br>
+        Rooms: 14<br>
+        Price: €7,200K<br>
+        Status: Available
+      </div>
+      <a href="#" class="cta-button">BOOK NOW</a>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
